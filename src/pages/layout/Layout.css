@@ -1,0 +1,43 @@
+.layout-container {
+  min-height: 100vh; /* Ocupa al menos el 100% del viewport */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.layout-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/image-home.jpg");
+  background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+  background-attachment: fixed; /* Efecto parallax */
+  background-position: center;
+  z-index: -2; /* Coloca la imagen en el fondo */
+}
+
+.layout-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Overlay oscuro para mejorar visibilidad del texto */
+  z-index: -1; /* Coloca el overlay por encima de la imagen pero detrás del contenido */
+}
+
+.main-container {
+  flex: 1; /* Empuja el footer hacia abajo */
+  width: 100%;
+  padding-top: 60px; /* Añade espacio para el navbar fijo, debe coincidir con la altura del navbar */
+}

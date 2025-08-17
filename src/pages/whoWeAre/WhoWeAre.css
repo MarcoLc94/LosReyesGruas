@@ -1,0 +1,178 @@
+.who-we-are {
+  padding: 4rem 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: var(--color-primary);
+  bottom: -10px;
+  left: 25%;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.divider .line {
+  width: 80px;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.divider .dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .content-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.about-text p.highlight {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--color-primary-bg);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 4px 4px 0;
+}
+
+.expertise h3,
+.advantages h3,
+.location h3 {
+  font-size: 1.8rem;
+  color: var(--color-heading);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.expertise h3::after,
+.advantages h3::after,
+.location h3::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  bottom: 0;
+  left: 0;
+}
+
+.expertise ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.expertise ul li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.expertise ul li .icon {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.advantage-card {
+  background: var(--color-card-background);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--color-shadow);
+  transition: transform 0.3s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px);
+}
+
+.advantage-card .card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.advantage-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-heading);
+}
+
+.location .address-card {
+  background: var(--color-card-background);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--color-shadow);
+}
+
+.map-placeholder {
+  height: 200px;
+  background-color: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.map-placeholder span {
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+}

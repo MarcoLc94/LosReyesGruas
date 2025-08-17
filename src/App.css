@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+/* ===== Tema Claro ===== */
+[data-theme="light"] {
+  --color-background: #f8f8f8;
+  --color-surface: #1f3051;
+  --color-surface-rgb: 31, 48, 81;
+  --color-text: #1a1a1a;
+  --color-heading: #0a0a0a;
+  --color-border: #cccccc;
+  --color-border-rgb: 204, 204, 204;
+
+  /* Colores de marca */
+  --color-primary: #ff6a00; /* Naranja principal */
+  --color-primary-intense: #e85c00; /* Naranja más oscuro */
+  --color-primary-bg: rgba(255, 106, 0, 0.1);
+
+  --color-secondary: #ffcc00; /* Amarillo secundario */
+  --color-accent: #ffa733; /* Naranja claro */
+
+  /* Botones */
+  --color-button-text: #ffffff;
+  --color-button-background: var(--color-primary);
+  --color-button-hover: var(--color-primary-intense);
+  --color-button-disabled: #cccccc;
+
+  /* Inputs */
+  --color-input-background: #ffffff;
+  --color-input-border: #cccccc;
+  --color-input-placeholder: #888888;
+  --color-input-focus: var(--color-primary);
+
+  /* Efectos */
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-card-background: #ffffff;
+  --color-modal-background: rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Tema Oscuro ===== */
+[data-theme="dark"] {
+  --color-background: #0a0a0a;
+  --color-surface: #1a1a1a;
+  --color-surface-rgb: 26, 26, 26;
+  --color-text: #f0f0f0;
+  --color-heading: #ffffff;
+  --color-border: #333333;
+  --color-border-rgb: 51, 51, 51;
+
+  /* Colores de marca */
+  --color-primary: #ff6a00; /* Naranja brillante */
+  --color-primary-intense: #ff8a33; /* Naranja más claro */
+  --color-primary-bg: rgba(255, 106, 0, 0.15);
+
+  --color-secondary: #ffcc00; /* Amarillo vibrante */
+  --color-accent: #ffd54f; /* Amarillo suave */
+
+  /* Botones */
+  --color-button-text: #ffffff;
+  --color-button-background: var(--color-primary);
+  --color-button-hover: var(--color-primary-intense);
+  --color-button-disabled: #555555;
+
+  /* Inputs */
+  --color-input-background: #1a1a1a;
+  --color-input-border: #444444;
+  --color-input-placeholder: #aaaaaa;
+  --color-input-focus: var(--color-primary);
+
+  /* Efectos */
+  --color-shadow: rgba(0, 0, 0, 0.5);
+  --color-card-background: #1a1a1a;
+  --color-modal-background: rgba(255, 255, 255, 0.05);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-intense);
+}
