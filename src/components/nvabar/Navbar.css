@@ -64,10 +64,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px; /* Ajusta según el tamaño de tu mancha */
-  height: 400%;
+  width: 330px; /* Aumentado 10% más (300px + 30px) para cubrir mejor el texto */
+  height: 440%; /* Aumentado 10% más (400% + 40%) para mayor cobertura vertical */
   background-image: url("/paint-stain.png");
-  background-size: 60%; /* This makes it 10% bigger than original size */
+  background-size: 66%; /* Aumentado 10% más (60% + 6%) para mayor cobertura */
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
