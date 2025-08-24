@@ -2,14 +2,19 @@ import { useRef } from "react";
 import "./Home.css";
 import Benefits from "../../components/benefits/Benefits";
 import Welcome from "../welcome/Welcome";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-
+  const navigate = useNavigate();
   const phoneNumber = "+528117764871";
 
   const openWhatsApp = () => {
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
+
+  const redirectToServices = () => {
+    navigate("/services");
   };
 
   return (
@@ -30,7 +35,9 @@ const Home = () => {
                 Contactar ahora
               </button>
 
-              <button className="secondary-button">Nuestros servicios</button>
+              <button className="secondary-button" onClick={redirectToServices}>
+                Nuestros servicios
+              </button>
             </div>
           </div>
 

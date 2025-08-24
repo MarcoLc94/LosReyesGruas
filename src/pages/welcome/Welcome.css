@@ -6,31 +6,13 @@
   overflow: hidden;
 }
 
-.background-slideshow {
+.background-canvas {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
   z-index: 1;
-}
-
-.background-slideshow.fading {
-  opacity: 0;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 2;
 }
 
 .content {
@@ -46,7 +28,7 @@
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 300px;
   margin-bottom: 30px;
 }
 
@@ -56,7 +38,7 @@
   color: white;
   margin-bottom: 40px;
   max-width: 800px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .highlight {
@@ -105,6 +87,7 @@
 @media (max-width: 768px) {
   .home-title {
     font-size: 1.8rem;
+    padding: 0 20px;
   }
 
   .logo {
