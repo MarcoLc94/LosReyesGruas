@@ -3,6 +3,8 @@ import "./Home.css";
 import Benefits from "../../components/benefits/Benefits";
 import Welcome from "../welcome/Welcome";
 import { useNavigate } from "react-router-dom";
+import Certification from "../certification/Certification";
+import Invitation from "../invitation/Invitation";
 
 const Home = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -49,6 +51,14 @@ const Home = () => {
 
       <section>
         <Benefits />
+      </section>
+
+      <section>
+        <Certification></Certification>
+      </section>
+
+      <section>
+        <Invitation></Invitation>
       </section>
     </>
   );

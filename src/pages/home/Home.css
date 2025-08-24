@@ -87,7 +87,7 @@ html {
 }
 
 .home-description {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 1.6;
   max-width: 90%;
   font-weight: 500;
@@ -109,10 +109,12 @@ html {
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 1.3rem;
 }
 
 .primary-button:hover {
   background-color: var(--color-primary-intense);
+  color: white;
 }
 
 .secondary-button {
@@ -124,6 +126,7 @@ html {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 1.3rem;
 }
 
 .secondary-button:hover {
@@ -184,5 +187,23 @@ html {
   .montacarga-image {
     max-height: 50vh;
     min-height: 300px;
+  }
+}
+
+@media (width < 500px) {
+  .home-description {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    max-width: 90%;
+    font-weight: 500;
+    color: var(--color-button-text);
+  }
+
+  .primary-button {
+    font-size: 1rem;
+  }
+
+  .secondary-button {
+    font-size: 1rem;
   }
 }

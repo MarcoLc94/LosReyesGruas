@@ -2,7 +2,7 @@
 .welcome-container {
   position: relative;
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -106,5 +106,31 @@
   .belt-stripe {
     width: 12vw;
     margin-right: -2vw;
+  }
+}
+
+@media (width < 500px) {
+  .welcome-container {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+  }
+
+  .content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .logo {
+    max-width: 200px;
+    margin-bottom: 30px;
   }
 }
