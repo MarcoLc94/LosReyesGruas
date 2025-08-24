@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./Home.css";
 import Benefits from "../../components/benefits/Benefits";
+import Welcome from "../welcome/Welcome";
 
 const Home = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -13,17 +14,12 @@ const Home = () => {
 
   return (
     <>
+      <Welcome></Welcome>
       <section className="home-section" ref={sectionRef}>
         <div className="background-overlay"></div>
 
         <div className="home-container">
           <div className="home-content">
-            <h1 className="home-title">
-              Soluciones en <span className="highlight">grúas</span>,{" "}
-              <span className="highlight">montacargas</span> y{" "}
-              <span className="highlight">maniobras industriales</span>
-            </h1>
-
             <p className="home-description">
               SOMOS UNA EMPRESA REGIOMONTANA CON MÁS DE 15 AÑOS DE EXPERIENCIA
               EN LA MANIOBRA DE MAQUINARIA INDUSTRIAL

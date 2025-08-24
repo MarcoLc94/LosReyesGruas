@@ -46,7 +46,7 @@ const Navbar = () => {
                 <Link
                   to="/whoWeAre"
                   className={`nav-link ${
-                    location.pathname === "/whoWeAre" ? "active" : ""
+                    location.pathname === "/whoWeAre" ? "activeBig" : ""
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
