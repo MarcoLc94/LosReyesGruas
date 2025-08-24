@@ -34,7 +34,7 @@ const Footer = () => {
             </p>
             <div className="social-links-footer">
               <a
-                href="https://facebook.com/losreyesgruas"
+                href="https://www.facebook.com/profile.php?id=61555724414409"
                 className="social-link"
                 aria-label="Facebook"
                 target="_blank"
@@ -59,7 +59,7 @@ const Footer = () => {
                   className="social-icon"
                 />
               </a>
-              <a
+              {/* <a
                 href="https://linkedin.com/company/losreyesgruas"
                 className="social-link"
                 aria-label="LinkedIn"
@@ -71,7 +71,7 @@ const Footer = () => {
                   alt="LinkedIn"
                   className="social-icon"
                 />
-              </a>
+              </a> */}
               <a
                 href="https://instagram.com/losreyesgruas"
                 className="social-link"

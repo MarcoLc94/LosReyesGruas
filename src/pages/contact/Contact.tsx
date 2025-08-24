@@ -184,7 +184,7 @@ const Contact = () => {
                     <h4 className="contact-item-title">Redes Sociales</h4>
                     <div className="contact-social-links">
                       <a
-                        href="https://www.facebook.com/losreyesgruas"
+                        href="https://www.facebook.com/profile.php?id=61555724414409"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="contact-social-link"

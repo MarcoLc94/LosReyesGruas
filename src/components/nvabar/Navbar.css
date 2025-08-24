@@ -253,7 +253,7 @@
     top: 40px;
     left: 0;
     width: 100%;
-    background-color: rgba(var(--color-surface-rgb), 0.7);
+    background-color: rgba(var(--color-surface-rgb), 1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     flex-direction: column;
@@ -278,7 +278,7 @@
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    gap: 8rem;
+    gap: 6rem;
     text-align: center;
     height: 100%;
     font-size: 25px;
