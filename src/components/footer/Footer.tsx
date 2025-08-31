@@ -59,19 +59,6 @@ const Footer = () => {
                   className="social-icon"
                 />
               </a>
-              {/* <a
-                href="https://linkedin.com/company/losreyesgruas"
-                className="social-link"
-                aria-label="LinkedIn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/linkedin.png"
-                  alt="LinkedIn"
-                  className="social-icon"
-                />
-              </a> */}
               <a
                 href="https://instagram.com/losreyesgruas"
                 className="social-link"
@@ -185,7 +172,7 @@ const Footer = () => {
           <span>Certificaciones:</span>
           <div className="certification-badges-footer">
             <span className="certification-badge-footer">REPSE</span>
-            <span className="certification-badge-footer">ISO 9001</span>
+
             <span className="certification-badge-footer">STPS</span>
             <span className="certification-badge-footer">
               Norma Oficial Mexicana
