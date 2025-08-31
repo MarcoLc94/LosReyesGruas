@@ -44,9 +44,9 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/quienes-somos"
+                  to="/whoWeAre"
                   className={`nav-link ${
-                    location.pathname === "/quienes-somos" ? "activeBig" : ""
+                    location.pathname === "/whoWeAre" ? "activeBig" : ""
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -55,9 +55,9 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/servicios"
+                  to="/services"
                   className={`nav-link ${
-                    location.pathname === "/servicios" ? "active" : ""
+                    location.pathname === "/services" ? "active" : ""
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -66,9 +66,9 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/contacto"
+                  to="/contact"
                   className={`nav-link ${
-                    location.pathname === "/contacto" ? "active" : ""
+                    location.pathname === "/contact" ? "active" : ""
                   }`}
                   onClick={() => setIsOpen(false)}
                 >

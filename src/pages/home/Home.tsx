@@ -16,7 +16,7 @@ const Home = () => {
   };
 
   const redirectToServices = () => {
-    navigate("/servicios");
+    navigate("/services");
   };
 
   return (
