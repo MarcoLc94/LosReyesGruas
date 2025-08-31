@@ -1,6 +1,12 @@
 import "./Services.css";
 
 const Services = () => {
+  const phoneNumber = "+528117764871";
+
+  const openWhatsApp = () => {
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
+
   return (
     <section className="services-section" id="servicios">
       <div className="container">
@@ -87,7 +93,9 @@ const Services = () => {
             ¿Necesitas un servicio personalizado? Contáctanos para una asesoría
             especializada.
           </p>
-          <button className="cta-button">Cotizar Servicio</button>
+          <button className="cta-button" onClick={openWhatsApp}>
+            Cotizar Servicio
+          </button>
         </div>
       </div>
     </section>
