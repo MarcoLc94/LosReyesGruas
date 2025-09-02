@@ -5,6 +5,7 @@ import Welcome from "../welcome/Welcome";
 import { useNavigate } from "react-router-dom";
 import Certification from "../certification/Certification";
 import Invitation from "../invitation/Invitation";
+import Publicity from "../../components/Publicity/Publicity";
 
 const Home = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -21,6 +22,7 @@ const Home = () => {
 
   return (
     <>
+      <Publicity></Publicity>
       <Welcome></Welcome>
       <section className="home-section" ref={sectionRef}>
         <div className="background-overlay"></div>
